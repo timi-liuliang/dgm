@@ -14,7 +14,7 @@ pg = st.navigation(
         ],
         "Infrastructure" : 
         [
-            st.Page("page/cpfs/cpfs.py", title="Cpfs", icon="🍄"),
+            st.Page("page/cpfs/cpfs.py", title="Setting", icon="🍄"),
         ]
     },
     expanded=True,
