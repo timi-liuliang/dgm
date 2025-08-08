@@ -1,6 +1,7 @@
 import os
 import yaml
 import core.config.config as config
+import core.project.manager as pm
 import streamlit as st
 
 def show_projects():
@@ -17,6 +18,9 @@ def show_projects():
                         projects.append(project_data)
                         st.write(file)
                         st.write(project_data)
+
+                        if st.button("Init", key=file_path):
+                            pm.init_project(project_data)
 
                 except Exception as e:
                     st.error(f"Parse project file: {file_path} failed: {str(e)}")

@@ -5,3 +5,6 @@ def get_workspace_dir():
 
 def get_project_config_dir():
     return f"{get_workspace_dir()}/config/project"
+
+def get_project_save_dir():
+    return f"{get_workspace_dir()}/projects"    
